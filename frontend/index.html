@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/botones.css">
+    <link rel="stylesheet" href="css/input.css">
+    <style>
+        .mensaje { text-align: center; font-weight: bold; min-height: 1.5em; }
+        .mensaje-ok { color: #1d7a3a; }
+        .mensaje-error { color: #b42318; }
+    </style>
+</head>
+<body>
+    <h1>Demostración de Carrito de Compra Básico</h1>
+    <h2>Frontend HTML + JavaScript que consume una API REST con Spring Boot</h2>
+    <p id="mensaje" class="mensaje"></p>
+
+    <div class="producto-cuadricula">
+        <div class="cuadricula-titulo">
+            <h3>Catálogo de productos</h3>
+        </div>
+        <div class="div-shopping-cart">
+            <a class="btn-carrito-compra2 apa bor-rad4" href="carrito.html">Ver carrito</a>
+        </div>
+        <div id="lista-productos" class="producto-lista"></div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

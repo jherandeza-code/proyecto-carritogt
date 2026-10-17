@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compra</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/botones.css">
+    <link rel="stylesheet" href="css/style-shopping-cart.css">
+    <link rel="stylesheet" href="css/tblAgl.css">
+    <style>
+        .mensaje { text-align: center; font-weight: bold; min-height: 1.5em; }
+        .mensaje-ok { color: #1d7a3a; }
+        .mensaje-error { color: #b42318; }
+        td img { width: 60px; }
+        [hidden] { display: none !important; }
+    </style>
+</head>
+<body>
+    <h1>Demostración de Carrito de Compra Básico</h1>
+    <h2>Frontend HTML + JavaScript que consume una API REST con Spring Boot</h2>
+    <p id="mensaje" class="mensaje"></p>
+
+    <div class="producto-cuadricula">
+        <div class="cuadricula-titulo">
+            <h3>Carrito de compra</h3>
+        </div>
+        <p><a href="index.html">&larr; Volver al catálogo</a></p>
+
+        <div id="carrito-vacio" class="div-tit-vacio apa" hidden>
+            <p>Tu carrito de compra está vacío</p>
+        </div>
+
+        <table id="tabla-carrito" class="tbl-agl-v2 table-hover" hidden>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Nombre</th>
+                    <th>Código</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="cuerpo-carrito"></tbody>
+        </table>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/carrito.js"></script>
+</body>
+</html>
