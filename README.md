@@ -109,3 +109,7 @@ Ejemplo:
 - No hay usuarios registrados: el carrito se identifica con un código aleatorio guardado en el navegador (`localStorage`); si se borran los datos del navegador, se pierde el acceso a ese carrito.
 - El frontend se sirve con el servidor de desarrollo de Python, no con Apache.
 - La contraseña de MySQL por defecto queda en `application.properties` para facilitar la instalación; en producción debe pasarse por variables de entorno.
+
+## 9. Versión PHP
+
+La carpeta `php/` tiene la versión original en PHP 7 que se migró, como referencia. No incluye `vendor/` (se instala con `composer install`), y la contraseña de MySQL en `php/App/Config.php` se cambió por `CAMBIAR`: para ejecutarla hay que poner la del equipo.
